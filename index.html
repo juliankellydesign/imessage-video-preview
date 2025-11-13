@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos Video - iMessage Preview Demo</title>
+
+    <!-- Open Graph Meta Tags for iMessage Rich Link Preview -->
+    <meta property="og:title" content="Cosmos Video Preview">
+    <meta property="og:description" content="Experience the cosmos with this beautiful video preview in iMessage">
+    <meta property="og:type" content="video.other">
+    <meta property="og:url" content="https://juliankellydesign.github.io/imessage-video-preview/">
+    <meta property="og:video" content="https://juliankellydesign.github.io/imessage-video-preview/cosmos.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+
+    <!-- Fallback image for when video can't load -->
+    <meta property="og:image" content="https://juliankellydesign.github.io/imessage-video-preview/cosmos.mp4">
+
+    <!-- Twitter Card for broader compatibility -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:title" content="Cosmos Video Preview">
+    <meta name="twitter:description" content="Experience the cosmos with this beautiful video preview">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin: 30px 0;
+        }
+
+        .instructions {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .instructions h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .instructions ol {
+            margin-left: 20px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .instructions li {
+            margin-bottom: 10px;
+        }
+
+        .url-box {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #667eea;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            word-break: break-all;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>iMessage Video Preview Demo</h1>
+        <span class="badge">Cosmos</span>
+
+        <p class="description">
+            This page demonstrates how to implement video previews in iMessage Rich Links.
+            When you share this URL in iMessage, the video will autoplay inline in the message preview.
+        </p>
+
+        <video autoplay loop muted playsinline controls>
+            <source src="cosmos.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="instructions">
+            <h2>How to Test iMessage Preview:</h2>
+            <ol>
+                <li>Copy the URL from the box below</li>
+                <li>Open iMessage on your iPhone, iPad, or Mac</li>
+                <li>Paste the URL into a conversation</li>
+                <li>The video should appear and autoplay in the message preview</li>
+            </ol>
+
+            <div class="url-box">
+                https://juliankellydesign.github.io/imessage-video-preview/
+            </div>
+
+            <p style="color: #888; font-size: 0.9em; margin-top: 15px;">
+                <strong>Note:</strong> The video will autoplay and loop with audio muted.
+                Users can tap to unmute if audio is present.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
